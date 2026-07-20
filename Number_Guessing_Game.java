@@ -1,11 +1,11 @@
-import java.util.Scanner;
+import java.util.*;
 public class Number_Guessing_Game{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int again=1;
         System.out.println("===== Number Guessing Game Start =====\n");
         while(again==1){
-            int number=67;
+            int number = (int)(Math.random() * 100) + 1;
             int guess;
             int attempts=0;
             while(true){
